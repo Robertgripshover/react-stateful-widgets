@@ -56,20 +56,20 @@ export default function Counter() {
 
   const increment = () => {
     /* STEP 4 */
-    setCount + 1;
+    setCount(count + 1);
   };
   const decrement = () => {
     /* STEP 5 */
-    setCount - 1;
+    setCount(count -1);
   };
   const reset = () => {
-    setCount = 0;
+    setCount(0);
   };
 
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    // count % 2 === 0 ? 'royalblue' : 'crimson' /* STEP 2 */
+   color: count % 2 === 0 ? 'royalblue' : 'crimson' /* STEP 2 */
   };
 
   return (
